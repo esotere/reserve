@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+  <title>Recapitalization</title>
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet/less" type="text/css" href="./styles/styles.less" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+  <!-- <style>
+    input {
+      display: block;
+      font-size: 24px;
+      height: 36px;
+    }
+  </style> -->
+</head>
+
+<body>
+  <form action="/submit" method="post">
+    <select id="title">
+      <option value="Title">Title</option>
+      <option value="Mr.">Mr.</option>
+      <option value="Mrs.">Mrs.</option>
+      <option value="Miss">Miss</option>
+      <option value="Dr.">Dr.</option>
+      <option value="Chief">Chief</option>
+    </select>
+    <input id="name" type="text" name="name" placeholder="name">
+    <input id="address" type="text" name="address" placeholder="address">
+    <input id="phone" type="number" name="phone number" placeholder="phone number">
+    <input id="email" type="email" name="email" placeholder="email">
+    <input id="nosp" type="number" name="number of shares purchased" placeholder="number of shares">
+    <input id="bank" type="text" name="bank name" placeholder="bank name">
+    <input id="acct" type="number" name="bank account number" placeholder="bank account number">
+    <input id="bvn" type="number" name="bank verification number" placeholder="bvn">
+    <input id="name_nok" type="text" name="name of nok" placeholder="name of nok">
+    <input id="relationship" type="text" name="relationship of nok" placeholder="relationship of nok">
+    <input id="address_nok" type="text" name="address of nok" placeholder="address of nok">
+    <input id="phone_nok" type="number" name="phone number of nok" placeholder="phone number of nok">
+    <input id="email_nok" type="email" name="email of nok" placeholder="email of nok">
+    <input id="date" type="date" name="creation date" value="yyyy-MM-dd" min="2019-03-26"
+      placeholder="">
+    <input class="myBtn btn" id="submit" type="submit" id="submit">
+  </form>
+
+  <div id="display">
+    <button class="myBtn btn" id="retrieve">Retrieve</button>
+      <div id="data"></div>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./app.jsx"></script>
+</body>
+
+</html>
